@@ -23,9 +23,6 @@ jobs:
       
       - name: Run Tests with Coverage
         run: npm run coverage
-
-      - name: Coveralls GitHub Action
-        uses: coverallsapp/github-action@v2.2.3
       
       - name: Upload Coverage to Coveralls
         run: npx nyc report --reporter=text-lcov | npx coveralls
