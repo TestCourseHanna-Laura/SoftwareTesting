@@ -25,10 +25,9 @@ jobs:
         run: npm run coverage
       
       - name: Upload Coverage to Coveralls
-        run: npx nyc report --reporter=text-lcov | npx coveralls --repo-token $GITHUB_TOKEN 
-        env: 
-          GITHUB-TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          run: coveralls --service=github
+        uses: coverallsapp/github-action@master
+        with: 
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
       
 
