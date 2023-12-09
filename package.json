@@ -2,11 +2,17 @@
   "name": "software-testing-assignment",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha",
-    "coverage": "nyc mocha"
+    "test": " nyc mocha",
+    "coverage": "nyc --reporter=lcov --reporter=text mocha"
+  },
+  "nyc": {
+    "all": true,
+    "exclude": [
+      "src/.internal/**/*.js",
+      "test/**/*.js"
+    ]
   },
   "author": "",
   "license": "MIT",
