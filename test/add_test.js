@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import add from '../src/add.js';
 
-describe('add', () => {
+describe('adding', () => {
   it('should add two numbers correctly', () => {
     expect(add(1, 1)).to.equal(2);
     expect(add(6, 1)).to.equal(7);
