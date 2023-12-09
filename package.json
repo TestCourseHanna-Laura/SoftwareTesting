@@ -11,7 +11,7 @@
     "all": true,
     "exclude": [
       "src/.internal/**/*.js",
-      "test/**/*.js"
+      "coverage/**"
     ]
   },
   "author": "",
