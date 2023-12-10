@@ -20,6 +20,7 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+             npm install -g c8
       
       - name: Run Tests with Coverage c8
         run: c8 mocha
