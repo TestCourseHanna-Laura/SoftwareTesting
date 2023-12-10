@@ -22,7 +22,7 @@ jobs:
         run: npm install
 
       - name: Run tests with coverage
-        run: npm test -- --reporter=mocha-lcov-reporter > coverage.lcov
+        run: npm test -- --reporter=mocha-lcov-reporter
       
       - name: Upload Coverage to Coveralls
         uses: coverallsapp/github-action@master
