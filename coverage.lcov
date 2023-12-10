@@ -1,0 +1,4 @@
+
+> software-testing-assignment@1.0.0 test
+> mocha test/* "--reporter=mocha-lcov-reporter"
+
