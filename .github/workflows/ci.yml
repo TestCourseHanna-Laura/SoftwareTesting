@@ -23,7 +23,8 @@ jobs:
       run: npm install
 
     - name: Run tests with coverage
-      run: npx nyc --reporter=text-lcov --report-dir=coverage mocha test/*.js
+      run: npm test
+      working-directory: SoftwareTesting
 
     - name: Upload code coverage to Coveralls
       run: npx coveralls < coverage/lcov.info
