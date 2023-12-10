@@ -4,7 +4,7 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "test": "nyc mocha test/* --reporter=mocha-lcov-reporter",
+    "test": "mocha test/*.js --reporter=mocha-lcov-reporter",
     "coverage": "nyc report --reporter=text-lcov > coverage/lcov.info"
   },
   "author": "",
