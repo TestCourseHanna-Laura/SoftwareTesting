@@ -7,4 +7,8 @@ describe('adding', () => {
     expect(add(6, 1)).to.equal(7);
     expect(add(4569, 2301)).to.equal(6870);
   });
+  it('should handle negative numbers', () => {
+    expect(add(-2, 3)).to.equal(1);
+    expect(add(0, -3)).to.equal(-3);
+  });
 });
