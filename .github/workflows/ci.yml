@@ -27,7 +27,7 @@ jobs:
 
     - name: Upload code coverage to Coveralls
       run: npx coveralls < coverage/lcov.info
-      env:
+      with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
 
                     
